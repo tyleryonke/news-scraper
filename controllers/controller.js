@@ -62,6 +62,7 @@ module.exports = function(app) {
             });
     });
 
+    // Same comments currently appearing on each page regardless of article - looking into
     app.get("/comments/:article", function(req, res) {
         Article.find({id: req.params.article})
         .exec(function(err, article) {
