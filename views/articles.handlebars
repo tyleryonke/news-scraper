@@ -1,0 +1,8 @@
+{{#each articles}}
+
+    <a href="https://www.bbc.com{{ this.link }}" target="_blank">{{ this.title }}</a>
+    ---------------------
+    <a href="/comments/{{ this.id }}">View and share comments on this article</a>
+      <hr>
+
+{{/each}}

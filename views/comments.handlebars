@@ -1,0 +1,17 @@
+<h1>Comments on the article:</h1>
+
+<hr>
+
+{{#each comments}}
+  <span> {{this.text}} </span>
+  ----------
+  <form style="display: inline;"class="" action="/delete/{{ this.id }}" method="post">
+    <button type="submit">Delete this comment</button>
+  </form>
+
+  <hr>
+{{/each}}
+
+<form class="" action="/comments" method="post">
+  <input type="text" name="commentText" placeholder="Your comment here"></input>
+</form>
