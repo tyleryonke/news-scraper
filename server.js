@@ -31,7 +31,7 @@ app.set('view engine', 'handlebars');
 // Override with POST having ?_method=DELETE
 app.use(methodOverride('_method'));
 
-mongoose.connect("mongodb://localhost/news-scraper")
+mongoose.connect("mongodb://heroku_kw2szlcd:7v9ahqebm7rrrhtnmbf39v27d@ds111940.mlab.com:11940/heroku_kw2szlcd")
 var db = mongoose.connection;
 
 // Log mongoose errors
